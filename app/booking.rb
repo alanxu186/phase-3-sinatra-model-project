@@ -1,5 +1,5 @@
 class Booking < ActiveRecord::Base
-    belongs_to :modle
-    belongs_to :angency
+    belongs_to :model
+    belongs_to :agency
 
 end

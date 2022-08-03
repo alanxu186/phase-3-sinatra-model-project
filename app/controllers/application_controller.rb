@@ -3,8 +3,7 @@ class ApplicationController < Sinatra::Base
   
   # Add your routes here
   get "/agency" do
-    agency = Agency.all 
-    agency.to_json
+    Agency.all.to_json
   end
 
 end

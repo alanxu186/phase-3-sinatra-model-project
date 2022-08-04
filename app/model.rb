@@ -10,7 +10,7 @@ class Model < ActiveRecord::Base
         self.all.map{|last_name| last_name.last_name}
     end
 
-    def self.names
+    def self.full_name
         self.all.map{|name| name.first_name + ' ' + name.last_name}
     end
 

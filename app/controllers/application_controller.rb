@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
     model.to_json 
   end
 
-  get "/model/names" do 
+  get "/model/full_name" do 
     model = Model.names
     model.to_json 
   end

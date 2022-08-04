@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_03_152402) do
+ActiveRecord::Schema.define(version: 2022_08_04_175737) do
 
   create_table "agencies", force: :cascade do |t|
     t.string "company_name"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2022_08_03_152402) do
     t.string "last_name"
     t.string "based"
     t.string "ethnicity"
+    t.string "img"
     t.integer "feet"
     t.integer "inches"
     t.boolean "work_status"

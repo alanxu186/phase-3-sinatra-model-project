@@ -5,6 +5,7 @@ class CreateModels < ActiveRecord::Migration[6.1]
       t.string :last_name
       t.string :based
       t.string :ethnicity
+      t.string :img
       t.integer :feet
       t.integer :inches
       t.boolean :work_status

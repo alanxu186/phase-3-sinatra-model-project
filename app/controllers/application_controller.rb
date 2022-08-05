@@ -8,7 +8,7 @@ class ApplicationController < Sinatra::Base
     agency.to_json
   end
 
-  get "/model" do 
+  get "/models" do 
     model = Model.all
     model.to_json
   end
@@ -63,9 +63,9 @@ class ApplicationController < Sinatra::Base
     model.to_json
   end
 
-  patch "/model/:id" do
+  patch "/models/:id" do
     model = Model.find(params[:id])
-    model.update(
+    model.update!(
       work_status: params[:work_status]
     )
     model.to_json

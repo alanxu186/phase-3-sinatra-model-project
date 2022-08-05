@@ -9,6 +9,7 @@ class CreateModels < ActiveRecord::Migration[6.1]
       t.integer :feet
       t.integer :inches
       t.boolean :work_status
+      t.string :agency
     end
   end
 end

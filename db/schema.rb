@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 2022_08_04_175737) do
     t.integer "feet"
     t.integer "inches"
     t.boolean "work_status"
+    t.string "agency"
   end
 
 end
